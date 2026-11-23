@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — IronAlly</title>
+  <link rel="icon" type="image/png" href="/assets/app-icon.png" />
+  <link rel="stylesheet" href="/index.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand-link" href="/">
+        <img class="brand-icon" src="/assets/app-icon.png" alt="IronAlly" />
+        <span>IronAlly</span>
+      </a>
+      <button id="langToggle" class="lang-toggle" type="button">中文 / EN</button>
+    </div>
+  </header>
+
+  <main class="container" style="padding-bottom:64px;">
+    <section class="legal-hero">
+      <h1><span class="en-only">Privacy Policy</span><span class="zh-only">隐私政策</span></h1>
+      <p style="color:var(--text-soft);margin-top:6px;">Effective Date: November 23, 2026 · IronAlly v1.0.0</p>
+    </section>
+
+    <section class="legal-card">
+      <h2><span class="en-only">1. Local-First Data Sovereignty</span><span class="zh-only">1. 本地优先与数据主权</span></h2>
+      <p class="en-only">IronAlly is engineered around strict data sovereignty. Your workout history, custom routines, exercise logs, body metrics, and nutrition records are stored locally in your device's SwiftData sandbox with no mandatory cloud account, zero third-party advertising SDKs, and zero cross-app tracking (NSPrivacyTracking = false).</p>
+      <p class="zh-only">IronAlly 坚持严格的数据主权原则。您的全部训练记录、自定义模板、身体围度与饮食日志均保存在设备本地 SwiftData 沙盒中，无需注册云端账号，零第三方广告 SDK，零跨应用追踪（NSPrivacyTracking = false）。</p>
+      <p class="en-only">Sensitive local captures — including Face ID–protected physique progress photos, active workout recovery drafts, and biomechanics analysis caches — are isolated inside protected app storage with <code>isExcludedFromBackup = true</code> so private files are never silently copied to external backups without your explicit export.</p>
+      <p class="zh-only">敏感本地文件（包括受 Face ID 保护的体态进度照、训练草稿与动作分析缓存）均存储在受保护的本地目录中，并配置 <code>isExcludedFromBackup = true</code>，未经您主动导出不会静默上传至外部备份。</p>
+    </section>
+
+    <section class="legal-card">
+      <h2><span class="en-only">2. Apple HealthKit Strict Isolation (App Store Guideline 5.1.1(v))</span><span class="zh-only">2. Apple HealthKit 严格隔离承诺（Guideline 5.1.1(v)）</span></h2>
+      <p class="en-only">With your explicit permission, IronAlly reads Heart Rate Variability (HRV), resting heart rate, sleep stages (Deep &amp; REM), workouts, active energy, body composition (weight, body fat, lean body mass), and nutrition metrics from Apple Health solely to compute your on-device CNS recovery readiness and training correlations, and optionally writes completed strength sessions to close your Activity Rings.</p>
+      <p class="zh-only">仅在获得您明确授权后，IronAlly 会读取 Apple 健康中的 HRV、静息心率、睡眠分期（深睡与 REM）、体能训练、活动能量、体脂瘦体重与营养指标，用于在本地计算 CNS 恢复准备度与训练相关性，并可按需写入已完成的抗阻训练以闭合圆环。</p>
+      <ul>
+        <li class="en-only">HealthKit data is processed 100% locally on your iPhone/iPad and is never uploaded to developer servers.</li>
+        <li class="en-only">HealthKit data is never used for advertising, marketing, user profiling, or sold/shared with any third party or data broker.</li>
+        <li class="zh-only">所有 HealthKit 数据 100% 仅在您的设备本地计算，绝不上传至开发者服务器。</li>
+        <li class="zh-only">绝不将 Apple 健康数据用于广告投放、用户画像分析或向任何第三方出售共享。</li>
+      </ul>
+    </section>
+
+    <section class="legal-card">
+      <h2><span class="en-only">3. On-Demand AI Features &amp; Device Permissions</span><span class="zh-only">3. 按需 AI 功能与系统权限</span></h2>
+      <p class="en-only">AI Coach features (load calibration, equipment/meal photo scan, lifting form analysis, weekly review) are strictly user-initiated. When you explicitly tap an AI action, only the minimal anonymized workout summary or selected image/clip needed for that single request is transmitted over TLS via Apple App Attest–verified requests. Personal identifiers, HealthKit raw archives, and your private physique photo vault are never transmitted.</p>
+      <p class="zh-only">所有 AI 私教功能（负重校准、器械与餐食拍照识别、动作视频分析、周度复盘）均仅在您主动点击时按需触发。发起单次请求时，仅通过 HTTPS/TLS 与 Apple App Attest 校验传输该次分析所需的最小化脱敏训练摘要或所选图片，绝不传输个人身份信息、HealthKit 原始健康档案或您的私密体态相册。</p>
+      <p class="en-only">Camera, Photo Library, Microphone, Speech Recognition, and Face ID permissions are requested only in context when you invoke those specific features.</p>
+      <p class="zh-only">相机、相册、麦克风、语音识别与 Face ID 权限仅在您主动触发对应功能时按需申请。</p>
+    </section>
+
+    <section class="legal-card">
+      <h2><span class="en-only">4. Data Export, Deletion &amp; Contact</span><span class="zh-only">4. 数据导出、删除与联系方式</span></h2>
+      <p class="en-only">You can export your complete workout database as JSON or CSV at any time from Settings, or permanently delete all local data by uninstalling the app. For privacy questions, contact <a href="mailto:fangdev1063@gmail.com">fangdev1063@gmail.com</a>.</p>
+      <p class="zh-only">您可随时在应用“设置”中一键导出完整 JSON 或 CSV 数据，卸载应用即可彻底清除全部本地数据。如有任何隐私问题，请联系开发者：<a href="mailto:fangdev1063@gmail.com">fangdev1063@gmail.com</a>。</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© 2026 DevFang · IronAlly</div>
+      <div class="footer-links"><a href="/">Home</a><a href="/terms">Terms of Use</a><a href="mailto:fangdev1063@gmail.com">Support</a></div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const root = document.documentElement;
+      if (localStorage.getItem('ironally_lang') === 'zh') root.setAttribute('data-lang', 'zh');
+      document.getElementById('langToggle').addEventListener('click', () => {
+        const next = root.getAttribute('data-lang') === 'zh' ? 'en' : 'zh';
+        root.setAttribute('data-lang', next);
+        localStorage.setItem('ironally_lang', next);
+      });
+    })();
+  </script>
+</body>
+</html>

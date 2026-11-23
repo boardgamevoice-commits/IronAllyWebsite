@@ -1,0 +1,55 @@
+# IronAlly: AI Gym & Lift Log
+
+> IronAlly is an iPhone and iPad strength training app combining an interactive 36+ muscle anatomy heatmap, zero-checkmark offline workout logging, Apple Health CNS recovery readiness, and an on-demand AI coach.
+
+IronAlly is an iPhone and iPad strength training app that combines an interactive 36-muscle anatomy map, zero-friction workout logging, CNS recovery readiness, and an on-demand AI fitness coach — built for 100% offline use in basement gyms with zero account required and zero third-party ads.
+
+## Key features
+
+- Zero-Checkmark Live Logging: Start any session with all planned sets immediately ready. Adjust weights and reps one-handed in the thumb zone with automatic warmup ramps (50% / 70% / 85%) and plate math.
+- 36+ Muscle Anatomy & Physiological Fatigue Heatmap: Interactive front and back muscle map covering 357 built-in exercises across 9 equipment types, modeling 72-hour large-muscle and 36-hour small-muscle recovery automatically.
+- Self-Evolving Templates & Bad-Day Protection: Completed workouts automatically evolve your template baselines while guarding against sudden fatigue drops or deload weeks.
+- Overtime Rest Timer & Live Activities: Rest timers transition seamlessly into overtime count-up on Lock Screen and Dynamic Island with subtle audio ducking.
+- Apple Health & CNS Recovery Readiness: Read-only on-device HRV, Deep/REM sleep stages, resting heart rate, and body composition power a daily 0-100 CNS readiness score and RPE guidance.
+- On-Demand IronAlly AI Coach (Pro): Request AI load calibration, scan gym equipment or meal nutrition via camera, analyze lifting form videos, and generate weekly training block reviews.
+- Full Data Sovereignty & 9 Native Languages: 100% offline local SwiftData storage, Face ID protected physique photos, full JSON backup/restore, CSV import (Strong, Hevy, Xunji), and native UI in EN, ZH-Hans, ZH-Hant, JA, KO, DE, FR, ES, and PT-BR.
+
+## Facts
+
+- Category: Health & Fitness
+- Platform: iPhone, iPad, iPhone Duo (iOS 18.0+)
+- Version: 1.0.0
+- Price: Free core tracker; IronAlly Pro $6.99/month or $49.99/year (with 7-day free trial)
+- Account required: No
+- Offline capable: Yes (100% of core logging, timers, anatomy library, and charts)
+- Ads / third-party tracking: None
+- Medical device: No (general fitness and strength training tool only)
+
+## Links
+
+- [Official website](https://ironally.netlify.app/)
+- [Privacy policy](https://ironally.netlify.app/privacy)
+- [Terms of use](https://ironally.netlify.app/terms)
+- [Developer support](mailto:fangdev1063@gmail.com)
+
+## FAQ
+
+### Does IronAlly work offline in basement gyms without Wi-Fi or cell service?
+
+Yes. All core workout logging, 357-exercise anatomy guides, rest timers, plate calculator, 1RM tracking, and fatigue heatmaps run 100% locally on your iPhone or iPad with no account required. Only optional on-demand AI Coach features require an internet connection.
+
+### How is IronAlly different from Strong or Hevy?
+
+IronAlly eliminates redundant set-completion checkmarks so planned sets are editable immediately, includes an interactive 36+ muscle anatomy fatigue heatmap (72h large / 36h small muscle recovery model), calculates daily CNS recovery readiness from Apple Health HRV and sleep stages, and offers on-demand AI load calibration, equipment/meal camera scans, and video form analysis.
+
+### Where is my Apple Health and workout data stored?
+
+Your workout history, custom templates, progress photos (Face ID protected), and Apple Health metrics stay strictly on your device in local storage. IronAlly has zero third-party ads, zero tracking SDKs, never sells user data, and supports full JSON backup/restore and CSV import from Strong, Hevy, and Xunji.
+
+### Is IronAlly a medical device?
+
+No. IronAlly is a strength training and general wellness tracking app designed for healthy adults. Its CNS readiness score, fatigue heatmap, and AI suggestions are for fitness guidance only and do not provide medical diagnoses, rehabilitation prescriptions, or clinical advice.
+
+### How much does IronAlly cost and which languages are supported?
+
+Core workout logging, the 357-exercise anatomy library, fatigue heatmaps, rest timers, Live Activities, and JSON/CSV backups are free. IronAlly Pro ($6.99/month or $49.99/year with a 7-day free trial) unlocks AI Coach features. The app natively supports 9 languages: English, Simplified & Traditional Chinese, Japanese, Korean, German, French, Spanish, and Portuguese.

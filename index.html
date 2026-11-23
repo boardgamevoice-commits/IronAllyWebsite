@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IronAlly: AI Gym &amp; Lift Log — Muscle Anatomy &amp; CNS Recovery</title>
+  <meta name="description" content="IronAlly is an iPhone and iPad strength training app combining an interactive 36+ muscle anatomy heatmap, zero-checkmark offline workout logging, Apple Health CNS recovery readiness, and an on-demand AI coach." />
+  <meta property="og:title" content="IronAlly: AI Gym &amp; Lift Log" />
+  <meta property="og:description" content="36+ muscle anatomy heatmap, zero-checkmark offline strength logging, CNS recovery readiness, and on-demand AI strength coach." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ironally.netlify.app/" />
+  <meta property="og:image" content="https://ironally.netlify.app/assets/app-icon.png" />
+  <link rel="icon" type="image/png" href="/assets/app-icon.png" />
+  <link rel="apple-touch-icon" href="/assets/app-icon.png" />
+  <link rel="stylesheet" href="/index.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MobileApplication",
+        "name": "IronAlly: AI Gym & Lift Log",
+        "operatingSystem": "iOS 18.0+, iPadOS 18.0+",
+        "applicationCategory": "HealthApplication",
+        "softwareVersion": "1.0.0",
+        "url": "https://ironally.netlify.app/",
+        "image": "https://ironally.netlify.app/assets/app-icon.png",
+        "description": "IronAlly is an iPhone and iPad strength training app combining an interactive 36+ muscle anatomy heatmap, zero-checkmark offline workout logging, Apple Health CNS recovery readiness, and an on-demand AI coach.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "DevFang",
+          "email": "fangdev1063@gmail.com"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does IronAlly work offline in basement gyms without Wi-Fi or cell service?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. All core workout logging, 357-exercise anatomy guides, rest timers, plate calculator, 1RM tracking, and fatigue heatmaps run 100% locally on your iPhone or iPad with no account required. Only optional on-demand AI Coach features require an internet connection."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is IronAlly different from Strong or Hevy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "IronAlly eliminates redundant set-completion checkmarks so planned sets are editable immediately, includes an interactive 36+ muscle anatomy fatigue heatmap (72h large / 36h small muscle recovery model), calculates daily CNS recovery readiness from Apple Health HRV and sleep stages, and offers on-demand AI load calibration, equipment/meal camera scans, and video form analysis."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is my Apple Health and workout data stored?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Your workout history, custom templates, progress photos (Face ID protected), and Apple Health metrics stay strictly on your device in local storage. IronAlly has zero third-party ads, zero tracking SDKs, never sells user data, and supports full JSON backup/restore and CSV import from Strong, Hevy, and Xunji."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is IronAlly a medical device?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. IronAlly is a strength training and general wellness tracking app designed for healthy adults. Its CNS readiness score, fatigue heatmap, and AI suggestions are for fitness guidance only and do not provide medical diagnoses, rehabilitation prescriptions, or clinical advice."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does IronAlly cost and which languages are supported?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Core workout logging, the 357-exercise anatomy library, fatigue heatmaps, rest timers, Live Activities, and JSON/CSV backups are free. IronAlly Pro ($6.99/month or $49.99/year with a 7-day free trial) unlocks AI Coach features. The app natively supports 9 languages: English, Simplified & Traditional Chinese, Japanese, Korean, German, French, Spanish, and Portuguese."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand-link" href="/">
+        <img class="brand-icon" src="/assets/app-icon.png" alt="IronAlly App Icon" />
+        <span>IronAlly</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#features"><span class="en-only">Features</span><span class="zh-only">核心功能</span></a>
+        <a href="#compare"><span class="en-only">Compare</span><span class="zh-only">对比</span></a>
+        <a href="#pricing"><span class="en-only">Pricing</span><span class="zh-only">方案</span></a>
+        <a href="#faq">FAQ</a>
+        <a href="/privacy"><span class="en-only">Privacy</span><span class="zh-only">隐私政策</span></a>
+      </nav>
+      <button id="langToggle" class="lang-toggle" type="button">中文 / EN</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="pill">v1.0.0 · iPhone · iPad · iPhone Duo</div>
+          <h1>
+            <span class="en-only">Train Smarter with <span class="accent">36+ Muscle Anatomy</span> &amp; Zero-Friction Logging</span>
+            <span class="zh-only"><span class="accent">36+ 肌群解剖热力</span>与零阻碍力量训练搭档</span>
+          </h1>
+          <p class="hero-lead">
+            <span class="en-only">IronAlly is an iPhone and iPad strength training app that combines an interactive 36-muscle anatomy map, zero-checkmark offline logging, Apple Health CNS recovery readiness, and an on-demand AI coach.</span>
+            <span class="zh-only">IronAlly 专为 iPhone 与 iPad 打造，将 36+ 矢量肌群疲劳热力图、告别打钩的单手记组、Apple 健康 CNS 中枢恢复评估与按需 AI 私教融为一体。</span>
+          </p>
+          <div class="cta-row">
+            <a class="btn-primary" href="#pricing">
+              <span class="en-only">Available on the App Store</span>
+              <span class="zh-only">App Store 即将上线</span>
+            </a>
+            <a class="btn-secondary" href="mailto:fangdev1063@gmail.com?subject=%5BIronAlly%5D%20Support">
+              <span class="en-only">Contact Support</span>
+              <span class="zh-only">联系开发者支持</span>
+            </a>
+          </div>
+          <div class="trust-strip">
+            <span class="trust-chip">100% Offline Core</span>
+            <span class="trust-chip">Zero Ads &amp; Tracking</span>
+            <span class="trust-chip">9 Native Languages</span>
+            <span class="trust-chip">JSON / CSV Sovereignty</span>
+          </div>
+        </div>
+
+        <div class="lab-card" aria-label="Interactive CNS and Muscle Fatigue Simulator">
+          <div class="lab-head">
+            <div class="lab-title">
+              <span class="en-only">Live Recovery &amp; Fatigue Model</span>
+              <span class="zh-only">肌群恢复与 CNS 就绪模拟</span>
+            </div>
+            <span id="cnsBadge" class="lab-badge">Peak Ready · RPE 8-9</span>
+          </div>
+          <div class="cns-meter">
+            <div id="cnsRing" class="cns-ring"><span id="cnsScore">88</span></div>
+            <div>
+              <strong id="cnsLabel">CNS Readiness: Optimal</strong>
+              <p id="cnsSub" style="font-size:0.84rem;color:var(--text-soft);margin-top:2px;">HRV +9% vs 30d baseline · 7h 48m sleep</p>
+            </div>
+          </div>
+          <div class="muscle-bars">
+            <div class="m-row">
+              <span>Chest (72h)</span>
+              <div class="m-track"><div id="barChest" class="m-fill" style="width:76%;background:#FB923C;"></div></div>
+              <span id="pctChest">76%</span>
+            </div>
+            <div class="m-row">
+              <span>Lats / Back (72h)</span>
+              <div class="m-track"><div id="barBack" class="m-fill" style="width:24%;background:#93C5FD;"></div></div>
+              <span id="pctBack">24%</span>
+            </div>
+            <div class="m-row">
+              <span>Quads (72h)</span>
+              <div class="m-track"><div id="barLegs" class="m-fill" style="width:10%;background:#10B981;"></div></div>
+              <span id="pctLegs">10%</span>
+            </div>
+            <div class="m-row">
+              <span>Delts (36h)</span>
+              <div class="m-track"><div id="barDelts" class="m-fill" style="width:52%;background:#FDE047;"></div></div>
+              <span id="pctDelts">52%</span>
+            </div>
+          </div>
+          <div class="lab-controls">
+            <button class="lab-btn active" type="button" data-preset="push">Post Push Day</button>
+            <button class="lab-btn" type="button" data-preset="pull">Post Pull Day</button>
+            <button class="lab-btn" type="button" data-preset="legs">Post Leg Day</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>
+            <span class="en-only">Engineered for Real Gym Floors</span>
+            <span class="zh-only">为真实铁馆场景深度打磨</span>
+          </h2>
+          <p>
+            <span class="en-only">High-contrast pure light mode built for bright gym ceilings, one-handed thumb ergonomics, and zero connectivity stress.</span>
+            <span class="zh-only">纯浅色高对比度美学抗强光反光，核心操作全部落在拇指黄金区，地下室无网同样丝滑。</span>
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article class="card">
+            <span class="card-tag">WYSIWYG Logging</span>
+            <h3><span class="en-only">Zero-Checkmark Live Sets</span><span class="zh-only">零阻碍所见即所得记组</span></h3>
+            <p><span class="en-only">Every set loads ready to edit. Adjust loads one-handed with thumb-zone steppers, plate math, 3-second undo, and auto 50%/70%/85% warmup ramps.</span><span class="zh-only">开练即展开全部预设组，无需反复打钩。内置拇指步进器、自动算片器、误删 3 秒撤销与科学热身阶梯。</span></p>
+          </article>
+          <article class="card">
+            <span class="card-tag">MuscleWiki-Tier Atlas</span>
+            <h3><span class="en-only">36+ Muscle Anatomy &amp; Fatigue</span><span class="zh-only">36+ 肌群解剖与疲劳热力</span></h3>
+            <p><span class="en-only">357 localized exercises across 9 equipment filters paired with a physiological 72h large-muscle and 36h small-muscle recovery heatmap.</span><span class="zh-only">357 项标准动作 × 9 大器械交叉筛选，结合大肌群 72h / 小肌群 36h 生理半衰期动态渲染充血与恢复状态。</span></p>
+          </article>
+          <article class="card">
+            <span class="card-tag">Apple Health &amp; CNS</span>
+            <h3><span class="en-only">Daily CNS Recovery Readiness</span><span class="zh-only">每日 CNS 中枢恢复评估</span></h3>
+            <p><span class="en-only">On-device HRV baseline, Deep/REM sleep stages, and body composition power a 0-100 readiness score with RPE training bounds.</span><span class="zh-only">本地分析 HRV 基线、深睡/REM 睡眠分期与瘦体重变化，输出每日 0-100 中枢就绪评分与 RPE 边界。</span></p>
+          </article>
+          <article class="card">
+            <span class="card-tag">Live Activities</span>
+            <h3><span class="en-only">Overtime Rest Timer &amp; Audio Ducking</span><span class="zh-only">超时正计时与音乐避让</span></h3>
+            <p><span class="en-only">Timers seamlessly roll into overtime count-up on Lock Screen and Dynamic Island, dipping music 30% for crisp cues without pausing playback.</span><span class="zh-only">组间倒计时归零自动切换灵动岛超时正计时，到点温柔压低耳机音乐 30% 提示，绝不中断歌单。</span></p>
+          </article>
+          <article class="card">
+            <span class="card-tag">IronAlly Pro AI</span>
+            <h3><span class="en-only">On-Demand AI Strength Coach</span><span class="zh-only">按需云端 AI 健身私教</span></h3>
+            <p><span class="en-only">Request AI load calibration, snap gym machines or meals for instant setup &amp; macro analysis, or review lifting form videos on demand.</span><span class="zh-only">按需触发今日负重校准、拍照识别器械用法与餐食宏量，以及动作视频生物力学深度纠错。</span></p>
+          </article>
+          <article class="card">
+            <span class="card-tag">Data Sovereignty</span>
+            <h3><span class="en-only">Offline, Private &amp; Portable</span><span class="zh-only">离线自治与数据主权</span></h3>
+            <p><span class="en-only">Zero account lock-in, Face ID physique photo vault, lossless JSON backup/restore, and one-tap CSV import from Strong, Hevy, and Xunji.</span><span class="zh-only">免注册零追踪，体态照 Face ID 加密隔离，支持全量 JSON 无损迁移与 Strong / Hevy / 训记 CSV 导入。</span></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="compare" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2><span class="en-only">IronAlly vs Traditional Gym Loggers</span><span class="zh-only">IronAlly 与传统记组软件对比</span></h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Capability</th>
+                <th class="col-highlight">IronAlly</th>
+                <th>Traditional Loggers</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Workout Logging Flow</td>
+                <td class="col-highlight">Zero-checkmark WYSIWYG + self-evolving templates</td>
+                <td>Manual checkmarks per set + manual template edits</td>
+              </tr>
+              <tr>
+                <td>Anatomy &amp; Fatigue Recovery</td>
+                <td class="col-highlight">36+ muscle vector heatmap (72h / 36h physiological decay)</td>
+                <td>Generic muscle list or static counts</td>
+              </tr>
+              <tr>
+                <td>CNS Readiness (HRV &amp; Sleep)</td>
+                <td class="col-highlight">Built-in on-device Apple Health 0-100 readiness gauge</td>
+                <td>Requires separate paid wearable subscription</td>
+              </tr>
+              <tr>
+                <td>Offline &amp; Account Privacy</td>
+                <td class="col-highlight">100% offline core, zero account, zero ads, JSON/CSV export</td>
+                <td>Mandatory cloud account &amp; feed social graph</td>
+              </tr>
+              <tr>
+                <td>On-Demand AI Vision &amp; Form</td>
+                <td class="col-highlight">Equipment scan, meal macros, load calibration &amp; video form</td>
+                <td>Not included or separate apps</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2><span class="en-only">Transparent Pricing, Zero Ads</span><span class="zh-only">清晰定价，全程零广告</span></h2>
+          <p><span class="en-only">Everything you need to lift, log, and track anatomy recovery is free forever. Upgrade only if you want cloud AI coaching.</span><span class="zh-only">核心记录、357 项解剖动作库、热力图与备份永久免费；仅在需要云端 AI 私教时按需升级。</span></p>
+        </div>
+        <div class="pricing-grid">
+          <div class="card price-card">
+            <span class="card-tag">Core Free</span>
+            <h3>IronAlly Free</h3>
+            <div class="price-num">$0</div>
+            <p><span class="en-only">Forever free · No account required</span><span class="zh-only">永久免费 · 免注册即用</span></p>
+            <ul class="price-list">
+              <li>✓ Unlimited workouts &amp; custom templates</li>
+              <li>✓ 357-exercise 36+ muscle anatomy library</li>
+              <li>✓ Physiological fatigue heatmap &amp; 1RM charts</li>
+              <li>✓ Overtime rest timer &amp; Live Activities</li>
+              <li>✓ JSON backup/restore &amp; CSV import</li>
+            </ul>
+          </div>
+          <div class="card price-card featured">
+            <span class="card-tag">7-Day Free Trial (Yearly)</span>
+            <h3>IronAlly Pro</h3>
+            <div class="price-num">$49.99<span style="font-size:0.95rem;font-weight:600;color:var(--text-soft);"> / yr</span></div>
+            <p><span class="en-only">Or $6.99 / month · Cancel anytime in Apple ID Settings</span><span class="zh-only">或月付 $6.99/月 · Apple ID 随时取消</span></p>
+            <ul class="price-list">
+              <li>✓ Everything in IronAlly Free</li>
+              <li>✓ On-demand AI daily load calibration</li>
+              <li>✓ Camera gym equipment &amp; meal macro scans</li>
+              <li>✓ Video biomechanics lifting form analysis</li>
+              <li>✓ Weekly AI strength block deep reviews</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2><span class="en-only">Frequently Asked Questions</span><span class="zh-only">常见问题解答</span></h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <h3>Does IronAlly work offline in basement gyms without Wi-Fi or cell service?</h3>
+            <p>Yes. All core workout logging, 357-exercise anatomy guides, rest timers, plate calculator, 1RM tracking, and fatigue heatmaps run 100% locally on your iPhone or iPad with no account required. Only optional on-demand AI Coach features require an internet connection.</p>
+          </div>
+          <div class="faq-item">
+            <h3>How is IronAlly different from Strong or Hevy?</h3>
+            <p>IronAlly eliminates redundant set-completion checkmarks so planned sets are editable immediately, includes an interactive 36+ muscle anatomy fatigue heatmap (72h large / 36h small muscle recovery model), calculates daily CNS recovery readiness from Apple Health HRV and sleep stages, and offers on-demand AI load calibration, equipment/meal camera scans, and video form analysis.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Where is my Apple Health and workout data stored?</h3>
+            <p>Your workout history, custom templates, progress photos (Face ID protected), and Apple Health metrics stay strictly on your device in local storage. IronAlly has zero third-party ads, zero tracking SDKs, never sells user data, and supports full JSON backup/restore and CSV import from Strong, Hevy, and Xunji.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Is IronAlly a medical device?</h3>
+            <p>No. IronAlly is a strength training and general wellness tracking app designed for healthy adults. Its CNS readiness score, fatigue heatmap, and AI suggestions are for fitness guidance only and do not provide medical diagnoses, rehabilitation prescriptions, or clinical advice.</p>
+          </div>
+          <div class="faq-item">
+            <h3>How much does IronAlly cost and which languages are supported?</h3>
+            <p>Core workout logging, the 357-exercise anatomy library, fatigue heatmaps, rest timers, Live Activities, and JSON/CSV backups are free. IronAlly Pro ($6.99/month or $49.99/year with a 7-day free trial) unlocks AI Coach features. The app natively supports 9 languages: English, Simplified &amp; Traditional Chinese, Japanese, Korean, German, French, Spanish, and Portuguese.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© 2026 DevFang · IronAlly v1.0.0</div>
+      <div class="footer-links">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Use</a>
+        <a href="/llms.txt">llms.txt</a>
+        <a href="mailto:fangdev1063@gmail.com">fangdev1063@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const saved = localStorage.getItem('ironally_lang');
+      if (saved === 'zh' || (!saved && navigator.language && navigator.language.toLowerCase().startsWith('zh'))) {
+        root.setAttribute('data-lang', 'zh');
+      }
+      document.getElementById('langToggle').addEventListener('click', () => {
+        const next = root.getAttribute('data-lang') === 'zh' ? 'en' : 'zh';
+        root.setAttribute('data-lang', next);
+        localStorage.setItem('ironally_lang', next);
+      });
+
+      const presets = {
+        push: { score: 88, badge: 'Peak Ready · RPE 8-9', label: 'CNS Readiness: Optimal', sub: 'HRV +9% vs 30d baseline · 7h 48m sleep', chest: 76, back: 24, legs: 10, delts: 52 },
+        pull: { score: 79, badge: 'Good Ready · RPE 7.5-8.5', label: 'CNS Readiness: Solid', sub: 'HRV +2% vs 30d baseline · 7h 15m sleep', chest: 34, back: 82, legs: 12, delts: 38 },
+        legs: { score: 66, badge: 'Moderate · RPE 6.5-7.5', label: 'CNS Readiness: Recovering', sub: 'HRV -6% after heavy squats · Prioritize sleep', chest: 14, back: 30, legs: 92, delts: 18 }
+      };
+      const colorFor = (v) => v >= 75 ? '#EF4444' : v >= 50 ? '#FB923C' : v >= 25 ? '#93C5FD' : '#10B981';
+      document.querySelectorAll('.lab-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.lab-btn').forEach((b) => b.classList.remove('active'));
+          btn.classList.add('active');
+          const p = presets[btn.dataset.preset];
+          document.getElementById('cnsScore').textContent = p.score;
+          document.getElementById('cnsRing').style.background = `conic-gradient(var(--brand) 0% ${p.score}%, #E2E8F0 ${p.score}% 100%)`;
+          document.getElementById('cnsBadge').textContent = p.badge;
+          document.getElementById('cnsLabel').textContent = p.label;
+          document.getElementById('cnsSub').textContent = p.sub;
+          [['Chest', p.chest], ['Back', p.back], ['Legs', p.legs], ['Delts', p.delts]].forEach(([k, v]) => {
+            const bar = document.getElementById('bar' + k);
+            bar.style.width = v + '%';
+            bar.style.background = colorFor(v);
+            document.getElementById('pct' + k).textContent = v + '%';
+          });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
