@@ -27,6 +27,7 @@ IronAlly is an iPhone and iPad strength training app that combines an interactiv
 
 ## Links
 
+- [Download on the App Store](https://apps.apple.com/app/id6838532245)
 - [Official website](https://ironally.netlify.app/)
 - [Privacy policy](https://ironally.netlify.app/privacy)
 - [Terms of use](https://ironally.netlify.app/terms)
